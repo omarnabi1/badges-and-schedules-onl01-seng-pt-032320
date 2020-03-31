@@ -8,8 +8,8 @@ def batch_badge_creator(attendees)
  attendees.map { |badges| badge_maker(badges) }
 end
 
-def assign_rooms(attendees)
-  
+def assign_rooms(name)
+  rooms = []
   attendees.collect do |name|
     room+1 
     "Hello, #{name}! You'll be assigned to room #{room}!"
